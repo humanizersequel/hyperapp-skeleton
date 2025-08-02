@@ -15,22 +15,17 @@ anyhow = "1.0"
 process_macros = "0.1"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-wit-bindgen = "0.36.0"
-base64ct = "=1.6.0"
+wit-bindgen = "0.42.1"
 
 # IMPORTANT: hyperprocess_macro provides async support and WIT generation
 [dependencies.hyperprocess_macro]
 git = "https://github.com/hyperware-ai/hyperprocess-macro"
-rev = "47400ab"
+rev = "f1cd5bb"
 
 # Common utilities for Hyperware apps
 [dependencies.hyperware_app_common]
 git = "https://github.com/hyperware-ai/hyperprocess-macro"
-rev = "47400ab"
-
-# Auto-generated caller utilities (created by kit build)
-[dependencies.caller-utils]
-path = "../target/caller-utils"
+rev = "f1cd5bb"
 
 # Optional dependencies you might need:
 # uuid = { version = "1.4.1", features = ["v4", "serde"] }
